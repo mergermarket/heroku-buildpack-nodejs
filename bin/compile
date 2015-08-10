@@ -139,7 +139,7 @@ cache_build() {
 
 #Run bower tasks
 install_bower_dependencies
-run_bower_install
+run_bower_task
 
 #Run grunt task
 install_grunt_dependencies
