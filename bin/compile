@@ -28,6 +28,8 @@ source $BP_DIR/lib/environment.sh
 source $BP_DIR/lib/binaries.sh
 source $BP_DIR/lib/cache.sh
 source $BP_DIR/lib/dependencies.sh
+source $BP_DIR/lib/grunt.sh
+source $BP_DIR/lib/bower.sh
 
 ### Handle errors
 
@@ -134,6 +136,14 @@ cache_build() {
   fi
   save_signature
 }
+
+#Run bower tasks
+install_bower_dependencies()
+run_bower_install()
+
+#Run grunt tasks
+install_grunt_dependencies()
+run_grunt_task()
 
 header "Caching build"
 cache_build | indent
