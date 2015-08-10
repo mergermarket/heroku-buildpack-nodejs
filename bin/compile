@@ -139,11 +139,11 @@ cache_build() {
 
 #Run bower tasks
 install_bower_dependencies
-run_bower_task
+run_bower_task "$BUILD_DIR"
 
 #Run grunt task
 install_grunt_dependencies
-run_grunt_task
+run_grunt_task "$BUILD_DIR"
 
 header "Caching build"
 cache_build | indent
